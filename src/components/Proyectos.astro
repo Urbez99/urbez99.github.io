@@ -28,6 +28,11 @@ const TAGS = {
     class: "bg-[#1c7777] text-white",
     icon: React,
   },
+  Php: {
+    name: "Php",
+    class: "bg-[#4F5B93] text-white",
+    icon: Html, // Sustituye esto por tu icono PHP real si lo tienes
+  },
 };
 
 const PROJECTS = [
@@ -41,17 +46,17 @@ const PROJECTS = [
   },
   {
     title: "Página Web con Implementación JS",
-    description: "Página sencilla creada con el objetivo de implementar JavaScript. Se utilizo Html, Css y JS",
+    description: "Página sencilla creada con el objetivo de implementar JavaScript. Se utilizó Html, Css y JS",
     link: "#",
     github: "https://github.com/Urbez99/paginaJS",
-    image: "/projects/Proyecto3.webp",
+    image: "/projects/Proyecto2.webp", 
     tags: [TAGS.Html, TAGS.Css, TAGS.Js],
   },
- {
+  {
     title: "Página Web en Servidor Externo",
     description: "Página creada para el seguimiento de torneos de las fiestas patronales",
     link: "https://proyectotfg.infinityfreeapp.com/?i=1",
-    image: "/projects/Proyecto2.webp",
+    image: "/projects/Proyecto3.webp", 
     tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.Php],
   },
 ];
@@ -71,7 +76,7 @@ const PROJECTS = [
         <div class="flex flex-wrap mt-2">
           <ul class="flex flex-row mb-2 gap-x-2">
             {tags.map((tag) => (
-              <li = {tag.name}>
+              <li key={tag.name}>
                 <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
                   <tag.icon class="size-4" />
                   {tag.name}
