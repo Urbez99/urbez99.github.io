@@ -1,8 +1,10 @@
-<svg {...Astro.props}
-xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 512 160"
-width="80"
-height="80">
-  <path fill="#008FD3" d="M0 0h512L400 160H0z"/>
-  <path fill="#FFF" d="M153.8 47.5c0-14.8-11.2-21.9-29.3-21.9H79.3v67.5h16.8V69.3h16.4l18.5 23.8h20.3l-21.2-26.9c11.2-2.6 24-8.3 24-18.7zm-47.7 7.8V40.8h15.8c8.5 0 13.7 2.9 13.7 7.4 0 6.3-7.6 7.1-13.9 7.1zm103.7-29.7h-18.5l-26.5 67.5h18.5l4.5-12h25l4.5 12h18.9l-26.4-67.5zm-18.3 39.2 7.8-21.4 7.9 21.4h-15.7zM297.2 25.6h-54.3v67.5h54.3c27.3 0 44.1-12.9 44.1-33.6 0-21.6-16.8-33.9-44.1-33.9zm-37.7 51.5V41.7h36.5c16 0 25.2 6.5 25.2 17.8 0 10.7-9.1 17.6-25.2 17.6h-36.5z"/>
+---
+const { width = "100", height = "100", class: className = "" } = Astro.props;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128" width={width} height={height} class={className}>
+  <rect width="512" height="128" fill="#0FAAFF" rx="15" />
+  <text x="50%" y="50%" fill="#fff" font-size="60" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle" alignment-baseline="central">
+    SAP
+  </text>
 </svg>
