@@ -1,10 +1,17 @@
 ---
-const { width = "100", height = "100", class: className = "" } = Astro.props;
+const { width = "80", height = "80", ...props } = Astro.props;
 ---
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128" width={width} height={height} class={className}>
-  <rect width="512" height="128" fill="#0FAAFF" rx="15" />
-  <text x="50%" y="50%" fill="#fff" font-size="60" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle" alignment-baseline="central">
-    SAP
-  </text>
+<svg
+  {...props}
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 452 520"
+  width={width}
+  height={height}
+>
+  <path fill="#000000" d="M0 0h452v520H0z" fill-opacity="0"/>
+  <path fill="#000000" d="M33 390L0 0h386l-33 390-160 45" />
+  <path fill="#ffca00" d="M193 405l128-35 30-340H193" />
+  <path fill="#000" d="M193 180h-64l-4-55h68V80H60l14 160h123zm0 140l-55-15-3-40h-48l6 78 106 28z"/>
+  <path fill="#fff" d="M193 240h58l-6 68-52 15v50l97-28 13-160H193zm0-160v52h114l4-52z"/>
 </svg>
